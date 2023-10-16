@@ -6,7 +6,8 @@
   department: "",
   institute: "",
   year: "",
-  logo: "logo.png",
+  logo: "img/rtu_logo.png",
+  bibliography_file: "works.bib",
   body
 ) = {
 
@@ -99,4 +100,5 @@
   counter(page).update(1)
   set page(numbering: "1", number-align: right)
   body
+  bibliography(bibliography_file, style: "ieee")
 }
