@@ -2,7 +2,9 @@
 
 Content included from `sample_section.typ`.
 
-You can use bibliography or you can show your code with highlighting and line numbers:
+You can use bibliography in any section you want, for example, #cite("foo2010") and #cite("shaw1998").
+
+You can also show your code with highlighting and line numbers:
 
 #sourcecode[
 ```cpp

@@ -23,6 +23,8 @@
 
 = Introduction
 
+#include "sections/sample_section.typ"
+
 == Heading level 2
 
 === Heading level 3
