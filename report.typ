@@ -16,7 +16,7 @@
       id: "000LOL000",
     ),
   ),
-  department: "",
+  department: "Faculty of Science and Knowledge",
   institute: "Riga Technical University",
   year: "2023"
 )
