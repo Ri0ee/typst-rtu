@@ -6,7 +6,7 @@
   department: "",
   institute: "",
   year: "",
-  logo: "logo.png",
+  logo: "img/rtu_logo.png",
   body
 ) = {
 
