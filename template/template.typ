@@ -6,8 +6,8 @@
   department: "",
   institute: "",
   year: "",
-  logo: "img/rtu_logo.png",
-  bibliography_file: "works.bib",
+  logo: "rtu_logo.png",
+  bibliography_file: "../works.bib",
   body
 ) = {
 
