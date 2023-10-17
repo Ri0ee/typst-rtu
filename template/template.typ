@@ -76,7 +76,7 @@
     #pagebreak(weak: true)
     #set align(center)
     #set text(16pt)
-    #block(counter(heading).display() + ". " + it.body)
+    #block(if it.numbering != none { counter(heading).display() + ". " } + it.body)
     #v(1em)
   ]
 
