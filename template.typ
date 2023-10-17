@@ -53,15 +53,16 @@
   ]
 
   align(right + horizon)[
-    #for author in authors [
-      #block([
-        #align(left)[
-            #text(14pt, author.name)
-          \ #text(14pt, author.group)
-          \ #text(14pt, author.id)
+    #block([
+      #align(left)[
+          #for author in authors [
+            \ #text(14pt, author.name)
+            \ #text(14pt, author.group)
+            \ #text(14pt, author.id)
+            #v(1em)
         ]
-      ])
-    ]
+      ]
+    ])
   ]
 
   align(center + bottom)[
