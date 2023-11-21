@@ -4,12 +4,15 @@
   subject: "",
   authors: (),
   department: "",
-  institute: "",
   year: "",
-  logo: "rtu_logo.png",
+  lang: "en",
   bibliography_file: "../works.bib",
   body
 ) = {
+  lang = lower(lang)
+  assert(lang == "lv" or lang == "en", message: "Languages other than LV or EN are not supported")
+
+  let institute = if lang == "en" {"Riga Technical University"} else {"Rīgas Tehniskā Universitāte"}
 
   set document(
     author: authors.at(0).name,
@@ -26,7 +29,7 @@
     )
   )
 
-  set text(font: "Times New Roman", lang: "en")
+  set text(font: "Times New Roman", lang: lang)
 
   set par(justify: true)
   set block(spacing: 1em)
@@ -40,7 +43,7 @@
   v(1em)
 
   align(center)[
-    #image(logo, width: 40%)
+    #image("logo_" + lang + ".svg", width: 40%)
   ]
   v(2em)
 

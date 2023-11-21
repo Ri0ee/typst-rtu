@@ -18,8 +18,8 @@
     ),
   ),
   department: "Faculty of Science and Knowledge",
-  institute: "Riga Technical University",
-  year: "2023"
+  year: "2023",
+  lang: "en"
 )
 
 = Introduction
