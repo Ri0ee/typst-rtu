@@ -76,7 +76,7 @@
     #pagebreak(weak: true)
     #set align(center)
     #set text(16pt)
-    #block(if it.numbering != none { counter(heading).display() + ". " } + it.body)
+    #it
     #v(1em)
   ]
 
@@ -84,7 +84,7 @@
     #set align(center)
     #set text(14pt)
     #v(24pt)
-    #block(counter(heading).display() + ". " + it.body)
+    #it
     #v(1em)
   ]
 
@@ -92,12 +92,12 @@
     #set align(left)
     #set text(12pt)
     #v(6pt)
-    #block(counter(heading).display() + ". " + it.body)
+    #it
     #v(1em)
   ]
 
   set par(justify: true)
-  set heading(numbering: "1.1")
+  set heading(numbering: "1.")
   counter(page).update(1)
   set page(numbering: "1", number-align: right)
   body

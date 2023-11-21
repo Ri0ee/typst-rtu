@@ -1,3 +1,4 @@
+#import "@preview/codelst:1.0.0": sourcecode
 #import "template/template.typ": *
 
 #show: project.with(
@@ -23,9 +24,7 @@
 
 = Introduction
 
-#import "@preview/codelst:1.0.0": sourcecode
-
-You can use bibliography in any section you want, for example, #cite("foo2010") and #cite("shaw1998").
+You can use bibliography in any section you want, for example, @foo2010 and @shaw1998.
 
 You can also show your code with highlighting and line numbers:
 
