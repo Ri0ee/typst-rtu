@@ -102,6 +102,7 @@
   set par(justify: true)
   set heading(numbering: "1.")
   counter(page).update(1)
+  set math.equation(numbering: "(1)")
   set page(numbering: "1", number-align: right)
   body
   bibliography(bibliography_file, style: "ieee")
