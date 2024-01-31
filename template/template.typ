@@ -105,5 +105,9 @@
   set math.equation(numbering: "(1)")
   set page(numbering: "1", number-align: right)
   body
-  bibliography(bibliography_file, style: "ieee")
+
+  locate(loc => {
+    let citation_count = query(ref, loc).filter(e => e.element == none).len()
+    if citation_count > 0 [#bibliography(bibliography_file, style: "ieee")]
+  })
 }
