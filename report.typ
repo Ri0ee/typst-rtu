@@ -1,4 +1,5 @@
-#import "@preview/codelst:2.0.0": sourcecode
+#import "@preview/codelst:2.0.1": *
+#import "@preview/tablex:0.0.8": *
 #import "template/template.typ": *
 
 #show: project.with(
