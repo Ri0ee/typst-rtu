@@ -29,7 +29,7 @@
     )
   )
 
-  set text(font: "Times New Roman", lang: lang)
+  set text(font: "Times New Roman", lang: lang, size: 12pt)
 
   set par(justify: true)
   set block(spacing: 1em)
