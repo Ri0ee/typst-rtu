@@ -56,3 +56,8 @@ int main() {
 == Heading level 2
 
 === Heading level 3
+
+#locate(loc => {
+  let citation_count = query(ref, loc).filter(e => e.element == none).len()
+  if citation_count > 0 [#bibliography("./works.bib", style: "ieee")]
+})

@@ -6,7 +6,6 @@
   department: "",
   year: "",
   lang: "en",
-  bibliography_file: "../works.bib",
   body
 ) = {
   lang = lower(lang)
@@ -29,7 +28,7 @@
     )
   )
 
-  set text(font: "Times New Roman", lang: lang, size: 12pt)
+  set text(font: "Times New Roman", lang: lang)
 
   set par(justify: true)
   set block(spacing: 1em)
@@ -105,9 +104,4 @@
   set math.equation(numbering: "(1)")
   set page(numbering: "1", number-align: right)
   body
-
-  locate(loc => {
-    let citation_count = query(ref, loc).filter(e => e.element == none).len()
-    if citation_count > 0 [#bibliography(bibliography_file, style: "ieee")]
-  })
 }
